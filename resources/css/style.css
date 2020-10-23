@@ -1,0 +1,453 @@
+/* font-family: 'Lato', sans-serif; */
+/* ----------------------------------------------------------------------
+                   basic setup
+-------------------------------------------------------------------------    */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Lato','Arial',sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    color:#555;
+    text-rendering: optimizeLegibility;
+}
+.clearfix{
+    zoom: 1;
+}
+.clearfix::after{
+    content: " ";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+/* ----------------------------------------------------------------------
+                   reuseable component
+-------------------------------------------------------------------------    */
+
+/* ---------------------headings--------------------------------- */
+
+.row{
+    width: 1140px;
+    margin: 0 auto;
+}
+section{
+    padding: 70px 0px;
+}
+.box{
+    padding: 1%;
+}
+h1,h2,h3{
+    text-transform: uppercase;
+    
+   
+    
+
+}
+h1{
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 240%;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+   
+}
+h2
+{
+    font-size: 180%;
+    text-align: center;
+    margin-bottom: 20px;
+ 
+    word-spacing: 2px;
+}
+h3{
+    font-size: 110%;
+   
+    margin-bottom: 15px;
+}
+h2:after{
+    content: " ";
+    display: block;
+    width: 100px;
+    height: 2px;
+    background-color: peru;
+    margin: 0 auto;
+   
+    margin-top: 20px;
+
+
+}
+.long-copy{
+    width: 70%;
+    line-height: 150%;
+    margin-left: 15%;
+}
+.box p{
+    line-height: 145%;
+    font-size: 90%;
+    
+}
+.icon-big{
+    color: teal;
+    font-size: 150%;
+    margin-bottom: 10px;
+    display: block;
+}
+.icon-small{
+    color: orange;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    font-size: 120%;
+    /* secret to align text */
+    line-height: 120%;
+    vertical-align:middle ;
+    margin-top: -5px;
+}
+/* ---------------------------links------------------------------------- */
+a:visited,a:link{
+    color: orange;
+    text-decoration: none;
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
+    transition: bottom-border 2s;
+   
+}
+a:active,a:hover{
+    color: #555;
+    bottom: 1px solid transparent;
+
+}
+
+/* ----------------------------------------------------------------------
+                   section meal
+-------------------------------------------------------------------------    */
+.section-meals{
+    padding: 0;
+}
+.meals-showcase{
+    list-style: none;
+    width: 100%;
+
+}
+.meals-showcase li{
+    display: block;
+    float: left;
+    width: 25%;
+
+}
+.meal-photo{
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+   
+    background-color: #000;
+}
+.meal-photo img{
+    width: 100%;
+    opacity: 0.7;
+    height: auto;
+    transform: scale(1.15);
+    transition: transform 0.5s opacity 0.5s;
+
+
+}
+.meal-photo img:hover{
+   
+    transform: scale(1);
+    opacity: 1;
+
+}
+/* ---------------------headings--------------------------------- */
+
+.btn:link,.btn:visited,input[type=submit]{
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    border: 1px solid steelblue;
+    transition: background-color 0.2s,color 0.2s;
+    margin-right: 20px;
+}
+.btn:hover,.btn:active{
+    color: papayawhip;
+}
+.btn-full:link,.btn-full:visited,input[type=submit]:link,input[type=submit]:visited{
+    background-color: chocolate;
+    color: #fff;
+}
+.btn-full:hover,.btn-full:active,input[type = submit]:hover,input[type=submit]:active{
+    background-color: peru;
+}
+.btn-ghost:link,.btn-ghost:visited{
+    
+    color: orange;
+}
+.btn-ghost:hover,.btn-ghost:active{
+   color: white;
+   background-color:orange;
+
+}
+
+
+/* ----------------------------------------------------------------------
+                  Header
+-------------------------------------------------------------------------    */
+
+header{
+    
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(./img/hero.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+.logo{
+    height: 100px;
+    width: auto;
+    float: left;
+}
+.main-nav{
+    float: right;
+    margin-top: 50px;
+}
+.main-nav li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 40px;
+}
+.main-nav li a:visited,.main-nav li a:link{
+    text-decoration: none;
+    font-size: 90%;
+    color: white;
+    padding: 10px 0px;
+    text-transform: capitalize;
+    border-bottom: 2px solid transparent;
+    transition: bottom-border 2s;
+}
+.main-nav li a:active,.main-nav li a:hover{
+    border-bottom: 2px solid orangered;
+    
+}
+.hero-text-box{
+    position: absolute;
+    width: 1140px;
+    top: 30%;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%,-50%);
+
+}
+
+/* ----------------------------------------------------------------------
+                  How it works
+-------------------------------------------------------------------------    */
+.section-step{
+    background-color: rgb(196, 179, 179);
+}
+.steps-box:first-child{
+    padding-right:3% ;
+    text-align: right;
+    margin-top: 30px;
+    
+}
+.steps-box:last-child{
+    padding-left: 3%;
+    margin-top: 60px;
+    
+   
+}
+.app-screen{
+    width: 40%;
+}
+.works-step{
+    margin-bottom: 30px;
+}
+.works-step:last-of-type{
+    margin-bottom: 50px;
+}
+.works-step div{
+    height: 40px;
+    width: 40px;
+    border: 2px solid orange;
+    border-radius: 50px;
+    text-align: center;
+    float: left;
+    font-size: 110%;
+    padding: 5px;
+    margin-right: 30px;
+}
+.btn-app img{
+    height: 40px;
+    width: auto;
+    margin-right: 10px;
+}
+/* ----------------------------------------------------------------------
+                 Cities section
+-------------------------------------------------------------------------    */
+.box img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+.city-feature{
+    margin-bottom: 5px;
+}
+/* ----------------------------------------------------------------------
+                 Customer Testimonial
+-------------------------------------------------------------------------    */
+.section-testimonials{
+
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(./img/back-customers.jpg);
+
+    background-size: cover;
+    color: white;
+    background-attachment: fixed;
+}
+blockquote{
+    font-style: italic;
+    padding: 5%;
+    line-height: 150%;
+    position: relative;
+
+}
+blockquote::before{
+    content: "\201c";
+    position: absolute;
+    top:-5px;
+    display: block;
+    left:-5px;
+    font-size: 500%;
+
+}
+cite{
+    font-size: 90%;
+    margin-top: 25px;
+    display: inline-block;
+    
+}
+cite img{
+    height: 50px;
+    vertical-align: middle;
+    margin-right: 10px;
+    width: auto;
+    border-radius: 50%;
+}
+/* ----------------------------------------------------------------------
+                 section-plans
+-------------------------------------------------------------------------    */
+.section-plans{
+    background-color:#f4f4f4;
+}
+.plan-box{
+    background-color: white;
+    width: 90%;
+    height: 100%;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px grey;
+    
+    
+    
+
+}
+.plan-box div{
+    
+    border-bottom: 1px solid rgb(238, 230, 230);
+    padding: 5%;
+    
+    
+}
+.plan-box div ul{
+    list-style: none;
+}
+.plan-box  ul li{
+   
+    line-height: 150%;
+    word-spacing: 1px;
+    padding: 5px 0;
+
+}
+.plan-box div:last-child{
+    text-align: center;
+    border: 0;
+}
+
+.plan-price{
+    color: rgb(235, 191, 110);
+    font-size: 220%;
+    font-weight:300;
+    margin-bottom: 5px;
+
+}
+.plan-price span{
+    font-size:50% ;
+
+}
+.plan-price-meal{
+    margin-bottom: 5px;
+
+}
+/* ----------------------------------------------------------------------
+                 sign up
+-------------------------------------------------------------------------    */
+.contact-form{
+    margin: 0 auto;
+    width: 60%;
+}
+input[type=text],
+input[type=email],
+select,
+textarea{
+    width: 50%;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid rgb(194, 201, 207);
+}
+*:focus{outline: none;} 
+/* ----------------------------------------------------------------------
+                 footer
+-------------------------------------------------------------------------    */
+footer{
+    background-color: darkslategrey;
+    width: 100%;
+    height: auto;
+   
+}
+footer ul{
+    margin: 20px 0;
+    list-style: none;
+
+}
+.social-links{
+    float:right;
+}
+
+footer ul li{
+    display:inline-block;
+    padding:10px;
+    margin-right: 20px;
+}
+.social-links:last-child,.footer-nav:last-child{
+    margin-right: 0;
+}
+.footer-nav a{
+    font-size: 80%;
+}
+.social-links ul{
+    position:absolute;
+    right: 0;
+}
+footer p{
+    text-align: center;
+    color: floralwhite;
+    margin-bottom: 50px;
+    font-size: 90%;
+}

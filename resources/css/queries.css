@@ -1,0 +1,25 @@
+
+/* big tablet screen 1280px (less than row 1140px) */
+
+@media only screen and (max-width:1280)
+{
+
+}
+/* tablet screen (768-1023 px */
+
+@media only screen and (max-width:1023)
+{
+
+}
+/* small phone to small  tablet  (481-767px) */
+
+@media only screen and (max-width:767)
+{
+
+}
+/* small phoone screen  (0-480) */
+
+@media only screen and (max-width:480)
+{
+
+}
